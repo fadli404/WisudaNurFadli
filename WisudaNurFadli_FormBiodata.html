@@ -1,0 +1,54 @@
+<html>
+
+<style>
+h1 {
+  border: 5px solid red;
+  margin: 10;
+}
+div {
+  border: 5px solid red;
+  margin: 10;
+}
+</style>
+
+<h1><center>Form Input Biodata</h1>
+<body>
+<div>
+<p>Nama lengkap : <input id="nama"></input> </p>
+<p>Jenis Kelamin : 
+<input type="radio" id="laki" name="gender" value="LakiLaki">
+<label for="laki">LakiLaki</label>
+
+<input type="radio" id="perempuan" name="gender" value="Perempuan">
+<label for="perempuan">Perempuan</label><br>
+	
+</p>
+<p>Hobi : 
+<input type="checkbox" id="hobi1" name="hobi1" value="Baca Buku">
+<label for="hobi1"> Baca Buku</label>
+
+<input type="checkbox" id="hobi2" name="hobi2" value="Olah Raga">
+<label for="hobi2"> Olah Raga</label>
+
+<input type="checkbox" id="hobi3" name="hobi3" value="Main Game">
+<label for="hobi3"> Main Game</label>
+
+<input type="checkbox" id="hobi4" name="hobi4" value="Hiking">
+<label for="hobi4"> Hiking</label>
+</p>
+
+<button onclick="btn_simpan()">Simpan</button>
+</div>
+
+<script>
+function btn_simpan(){
+var id_nama = document.getElementById("nama").value;
+var id_jeniskelamin = document.getElementById("laki").value;
+var id_hobi = document.getElementById("hobi1").value;
+
+	alert("Hai, "+id_nama+" "+id_jeniskelamin+" "+id_hobi);
+}
+</script>
+
+</body>
+</html>
