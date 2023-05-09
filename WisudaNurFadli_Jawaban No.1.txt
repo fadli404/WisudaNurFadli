@@ -1,0 +1,9 @@
+y := 3;
+x := 0;
+for i :=  0 to y-1 do
+begin
+x := x+2*i;
+end;
+Writeln(x);
+
+Outputnya adalah 0 dan 2
